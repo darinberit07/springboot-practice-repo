@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: simple-rest-api
+  datasource:
+    url: jdbc:h2:file:/data/test_db 
+    username: login
+    password: password
+    driver-class-name: org.h2.Driver  
+  jpa:
+    open-in-view: false
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true
