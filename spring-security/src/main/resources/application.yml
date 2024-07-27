@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-security-application
+  datasource:
+    url: jdbc:h2:file:/data/employee_details 
+    username: login
+    password: password
+    driver-class-name: org.h2.Driver  
+  jpa:
+    open-in-view: false
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true
